@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Default Random Number Input</title>
+</head>
+<body>
+  <input type="text" id="randomNumberInput" readonly>
+  <input placeholder="Enter your text..." class="input" name="text" type="text">
+  
+  <script>
+    // Function to generate a random number
+    function generateRandomNumber() {
+      return Math.floor(Math.random() * 1000); // Generates a random number between 0 and 999
+    }
+
+    // Set the default random number when the page loads
+    window.onload = function() {
+      var randomNumberInput = document.getElementById('randomNumberInput');
+      randomNumberInput.value = generateRandomNumber(); // Set the value of the input field to the generated random number
+    };
+  </script>
+
+  
+</body>
+</html>
