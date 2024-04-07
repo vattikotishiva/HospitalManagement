@@ -54,6 +54,9 @@ header{
     position: relative;
     transition: 0.5s;
 }
+.navbar .log{
+    color: crimson;
+}
 .navbar a:hover{
     color: var(--maincolor);
 }
@@ -73,6 +76,8 @@ header{
     width: 100%;
 }
 
+
+
 #menu-bars{
     color: var(--textcolor);
     font-size: 2.5rem;
@@ -83,6 +88,21 @@ header{
 #menu-bars:hover{
     color: var(--maincolor);
 }
+
+.right-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.right-icons a{
+    color: var(--textcolor);
+    font-size: 1.7rem;
+    margin: 1rem;
+    position: relative;
+    transition: 0.5s;
+}
+
 .right-icons .btn{
 
     padding: 1.2rem 2rem;
